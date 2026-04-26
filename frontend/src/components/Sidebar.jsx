@@ -72,7 +72,7 @@ export default function Sidebar() {
       {/* Brand */}
       <div className="px-6 py-6 border-b border-border">
         <h2 className="text-[22px] font-bold text-text-primary tracking-tight">
-          PaySplit
+          PayBud
         </h2>
         <p className="text-[12px] text-text-tertiary mt-0.5">
           Split smart, pay easy

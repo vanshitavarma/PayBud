@@ -10,9 +10,9 @@ export default function Landing() {
       <header className="px-6 py-5 sm:px-12 flex justify-between items-center max-w-7xl mx-auto sticky top-0 bg-surface/80 backdrop-blur-md z-50">
         <div className="flex items-center gap-2 group cursor-pointer">
           <div className="w-10 h-10 rounded-xl bg-primary-600 flex items-center justify-center text-white font-bold text-[20px] shadow-lg shadow-primary-200 transition-transform group-hover:scale-110">
-            P
+            B
           </div>
-          <span className="text-[22px] font-bold text-gray-900 tracking-tight">PaySplit</span>
+          <span className="text-[22px] font-bold text-gray-900 tracking-tight">PayBud</span>
         </div>
         <nav className="flex items-center gap-4 sm:gap-8">
           <Link to="/login" className="text-[15px] font-semibold text-gray-600 hover:text-primary-600 transition-colors hidden sm:block">
@@ -146,8 +146,8 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-6 sm:px-12 flex flex-col md:flex-row justify-between items-center gap-10">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center font-bold text-white">P</div>
-              <span className="text-xl font-bold">PaySplit</span>
+              <div className="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center font-bold text-white">B</div>
+              <span className="text-xl font-bold">PayBud</span>
             </div>
             <p className="text-gray-400 max-w-sm">Making group finances stress-free and simple.</p>
           </div>

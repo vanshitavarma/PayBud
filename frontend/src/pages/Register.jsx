@@ -38,9 +38,9 @@ export default function Register() {
         {/* Brand */}
         <Link to="/" className="inline-flex items-center gap-2 mb-10 text-primary-500 hover:text-primary-600 transition-colors">
           <div className="w-7 h-7 rounded-md bg-primary-500 flex items-center justify-center text-white font-bold text-[15px]">
-            P
+            B
           </div>
-          <span className="text-[18px] font-bold tracking-tight">PaySplit</span>
+          <span className="text-[18px] font-bold tracking-tight">PayBud</span>
         </Link>
 
         <div className="mb-8">

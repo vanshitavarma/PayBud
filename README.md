@@ -1,6 +1,6 @@
-# PaySplit (PayBud) 💸
+# PayBud 💸
 
-PaySplit is a modern full-stack web application designed to simplify the way you share expenses with friends, family, and colleagues. No more spreadsheets or complex math—PaySplit handles the "who owes whom" part so you can focus on the fun.
+PayBud is a modern full-stack web application designed to simplify the way you share expenses with friends, family, and colleagues. No more spreadsheets or complex math—PayBud handles the "who owes whom" part so you can focus on the fun.
 
 ## 🚀 Features
 
