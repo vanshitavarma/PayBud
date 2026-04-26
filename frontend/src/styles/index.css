@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+/* ===== PaySplit Design System ===== */
+
+@theme {
+  /* Primary palette */
+  --color-primary-50: #e8eef5;
+  --color-primary-100: #c5d5e6;
+  --color-primary-200: #9fb8d4;
+  --color-primary-300: #7a9bc1;
+  --color-primary-400: #5e84b3;
+  --color-primary-500: #1E3A5F;
+  --color-primary-600: #1a3354;
+  --color-primary-700: #152a45;
+  --color-primary-800: #102137;
+  --color-primary-900: #0b1728;
+
+  /* Accent palette */
+  --color-accent-50: #e6f3f8;
+  --color-accent-100: #bfe0ed;
+  --color-accent-200: #95cce1;
+  --color-accent-300: #6bb8d5;
+  --color-accent-400: #4da9cc;
+  --color-accent-500: #2E86AB;
+  --color-accent-600: #277495;
+  --color-accent-700: #1f5f7b;
+  --color-accent-800: #184b62;
+  --color-accent-900: #113748;
+
+  /* Semantic colors */
+  --color-success-50: #eef5f0;
+  --color-success-100: #d1e7d6;
+  --color-success-200: #a8d1b0;
+  --color-success-300: #7fba8a;
+  --color-success-400: #5fa76d;
+  --color-success-500: #4a8c5c;
+  --color-success-600: #3d7a4e;
+  --color-success-700: #31643f;
+  --color-success-800: #264e31;
+  --color-success-900: #1a3823;
+
+  --color-danger-50: #faf0ef;
+  --color-danger-100: #f2d5d2;
+  --color-danger-200: #e5aba5;
+  --color-danger-300: #d88179;
+  --color-danger-400: #cb5f55;
+  --color-danger-500: #b84c42;
+  --color-danger-600: #9e3f37;
+  --color-danger-700: #83332d;
+  --color-danger-800: #672823;
+  --color-danger-900: #4c1d19;
+
+  --color-warning-50: #fdf6ec;
+  --color-warning-100: #fae8c9;
+  --color-warning-200: #f5d49f;
+  --color-warning-300: #f0bf75;
+  --color-warning-400: #ebae55;
+  --color-warning-500: #d49a3e;
+  --color-warning-600: #b88234;
+  --color-warning-700: #966a2a;
+  --color-warning-800: #745220;
+  --color-warning-900: #523a17;
+
+  /* Neutrals — off-white system */
+  --color-surface: #F8F7F4;
+  --color-surface-raised: #FFFFFF;
+  --color-surface-sunken: #F0EEEA;
+  --color-border: #E2DFD9;
+  --color-border-strong: #C9C5BD;
+  --color-text-primary: #1C1C1E;
+  --color-text-secondary: #6B6966;
+  --color-text-tertiary: #9C9892;
+  --color-text-inverse: #F8F7F4;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(28, 28, 30, 0.05);
+  --shadow-md: 0 2px 8px rgba(28, 28, 30, 0.08);
+  --shadow-lg: 0 4px 16px rgba(28, 28, 30, 0.1);
+  --shadow-card: 0 1px 3px rgba(28, 28, 30, 0.06), 0 1px 2px rgba(28, 28, 30, 0.04);
+  --shadow-card-hover: 0 3px 10px rgba(28, 28, 30, 0.09), 0 1px 3px rgba(28, 28, 30, 0.05);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}
+
+/* ===== Dark Mode Theme (Premium Slate & Vibrant Highlights) ===== */
+html.dark {
+  /* Core Surfaces - Deep Midnight Blue / Slate */
+  --color-surface: #0a0f1c;
+  --color-surface-raised: #121927;
+  --color-surface-sunken: #1c263b;
+  --color-border: #2a364d;
+  --color-border-strong: #3b4963;
+  
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-tertiary: #64748b;
+  --color-text-inverse: #0a0f1c;
+
+  /* Primary Accent Adaptations for Dark Mode */
+  --color-primary-50: rgba(96, 165, 250, 0.12); /* Subtle bg highlight */
+  --color-primary-100: rgba(96, 165, 250, 0.2);
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #60a5fa; /* Glowy bright blue */
+  --color-primary-700: #93c5fd;
+
+  --color-accent-50: rgba(56, 189, 248, 0.12);
+  --color-accent-500: #38bdf8;
+  --color-accent-600: #7dd3fc;
+  --color-accent-700: #bae6fd;
+
+  /* Success / Positive (Vibrant Greens) */
+  --color-success-50: rgba(52, 211, 153, 0.1);
+  --color-success-100: rgba(52, 211, 153, 0.18);
+  --color-success-200: rgba(52, 211, 153, 0.3);
+  --color-success-600: #34d399;
+  --color-success-700: #10b981;
+  --color-success-800: #6ee7b7;
+
+  /* Danger / Owe (Vibrant Reds/Corals) */
+  --color-danger-50: rgba(248, 113, 113, 0.1);
+  --color-danger-100: rgba(248, 113, 113, 0.18);
+  --color-danger-200: rgba(248, 113, 113, 0.3);
+  --color-danger-600: #f87171;
+  --color-danger-700: #ef4444;
+  --color-danger-800: #fca5a5;
+
+  /* Warning */
+  --color-warning-50: rgba(251, 191, 36, 0.1);
+  --color-warning-600: #fbbf24;
+  --color-warning-700: #f59e0b;
+
+  /* Premium Deep Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.8);
+  --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 16px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Global base styles ===== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  line-height: 1.55;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 1.85rem; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.18rem; }
+h4 { font-size: 1.05rem; }
+
+a {
+  color: var(--color-accent-500);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-accent-600);
+}
+
+::selection {
+  background-color: var(--color-accent-100);
+  color: var(--color-primary-700);
+}
+
+/* ===== Toast animation ===== */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 0.75; }
+}
+
+@keyframes modal-backdrop-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-content-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
